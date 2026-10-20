@@ -30,7 +30,7 @@
     const nav = document.createElement('nav'); nav.id='mangaatlas-chapter-nav'; nav.setAttribute('aria-label','Chapter navigation');
     nav.style.cssText='max-width:1000px;margin:24px auto 30px;padding:0 16px;display:flex;justify-content:center;gap:12px;align-items:center;flex-wrap:wrap;';
     const make = (c,label) => c ? '<a href="/MangaAtlasRawJp.github.io/chapter.html?slug='+encodeURIComponent(c.slug)+'" style="display:inline-block;padding:11px 16px;border:1px solid #2a3040;border-radius:10px;color:#f5f5f7;text-decoration:none;background:#111822;font-weight:700">'+label+' · '+String(c.number)+'</a>' : '';
-    nav.innerHTML = make(prev,'← Previous') + '<a href="/" style="display:inline-block;padding:11px 18px;border:1px solid #2a3040;border-radius:10px;color:#f5f5f7;text-decoration:none;background:#111822;font-weight:700">⌂ Home</a>' + make(next,'Next →');
+    nav.innerHTML = make(prev,'← Previous') + '<a href="/MangaAtlasRawJp.github.io/" style="display:inline-block;padding:11px 18px;border:1px solid #2a3040;border-radius:10px;color:#f5f5f7;text-decoration:none;background:#111822;font-weight:700">⌂ Home</a>' + make(next,'Next →');
     const reader=document.getElementById('reader'); if(reader) reader.insertAdjacentElement('afterend',nav);
   }
   async function init() {
